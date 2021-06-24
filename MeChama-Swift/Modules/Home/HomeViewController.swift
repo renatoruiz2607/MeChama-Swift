@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class HomeViewController: UIViewController {
-
+    
     var viewModel: HomeViewModel
     private let disposeBag = DisposeBag()
     
@@ -31,19 +31,12 @@ class HomeViewController: UIViewController {
     }
     
     func setup() {
-        viewModel.text
-            .observe(on: MainScheduler.asyncInstance).skip(1)
-            .subscribe(onNext: { [weak self] text in
-                self?.textLabel.text = text
+        viewModel.restaurantCard
+            .observeOn(MainScheduler.asyncInstance).skip(1)
+            .subscribe(onNext: { [weak self] restaurantCard in
+                self?.textLabel.text = restaurantCard?.user.name
             }).disposed(by: disposeBag)
         
-        viewModel.restaurantCard
-        .observe(on: MainScheduler.asyncInstance).skip(1)
-        .subscribe(onNext: { [weak self] restaurantCard in
-            print(restaurantCard)
-        }).disposed(by: disposeBag)
-        
-        viewModel.getText()
         viewModel.fetchResults()
     }
 }

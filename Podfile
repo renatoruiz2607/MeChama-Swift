@@ -6,9 +6,9 @@ target 'MeChama-Swift' do
   use_frameworks!
 
   # Pods for MeChama-Swift
-  pod 'Alamofire'
-  pod 'RxSwift'
-  pod 'RxCocoa'
+  pod 'Alamofire', '~> 4.9.1'
+  pod 'RxSwift', '5.1.1'
+  pod 'RxCocoa', '5.1.1'
 
   target 'MeChama-SwiftTests' do
     inherit! :search_paths

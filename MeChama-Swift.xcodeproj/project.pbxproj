@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		10B77A30FAF92DB386A9B638 /* Pods_MeChama_Swift_MeChama_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46017F7F7E63E198515FC708 /* Pods_MeChama_Swift_MeChama_SwiftUITests.framework */; };
+		5FB9A15D2684F15A00351369 /* MeChamaApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9A15C2684F15A00351369 /* MeChamaApiRouter.swift */; };
+		5FB9A15F2684F1DF00351369 /* MeChamaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9A15E2684F1DF00351369 /* MeChamaApiClient.swift */; };
+		5FB9A1612684F21800351369 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9A1602684F21800351369 /* ApiClient.swift */; };
 		8A112E3B26820CDE00F868C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A112E3A26820CDE00F868C4 /* AppDelegate.swift */; };
 		8A112E4426820CE100F868C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A112E4326820CE100F868C4 /* Assets.xcassets */; };
 		8A112E4726820CE100F868C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A112E4526820CE100F868C4 /* LaunchScreen.storyboard */; };
@@ -42,6 +45,9 @@
 /* Begin PBXFileReference section */
 		36164E53D547E4E2FF02F2EA /* Pods_MeChama_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeChama_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46017F7F7E63E198515FC708 /* Pods_MeChama_Swift_MeChama_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeChama_Swift_MeChama_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB9A15C2684F15A00351369 /* MeChamaApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeChamaApiRouter.swift; sourceTree = "<group>"; };
+		5FB9A15E2684F1DF00351369 /* MeChamaApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeChamaApiClient.swift; sourceTree = "<group>"; };
+		5FB9A1602684F21800351369 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		6B512317F1C6C784018F44C1 /* Pods-MeChama-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChama-Swift.debug.xcconfig"; path = "Target Support Files/Pods-MeChama-Swift/Pods-MeChama-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		6ED77D14FFD06566A16659C7 /* Pods-MeChama-Swift-MeChama-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChama-Swift-MeChama-SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-MeChama-Swift-MeChama-SwiftUITests/Pods-MeChama-Swift-MeChama-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		72CDDF1C5E0E020D43623A0F /* Pods-MeChama-Swift-MeChama-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChama-Swift-MeChama-SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeChama-Swift-MeChama-SwiftUITests/Pods-MeChama-Swift-MeChama-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +114,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5FB9A15A2684F13500351369 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9A15B2684F13C00351369 /* Networking */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5FB9A15B2684F13C00351369 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9A15C2684F15A00351369 /* MeChamaApiRouter.swift */,
+				5FB9A15E2684F1DF00351369 /* MeChamaApiClient.swift */,
+				5FB9A1602684F21800351369 /* ApiClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		8A112E2E26820CDE00F868C4 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +157,7 @@
 		8A112E3926820CDE00F868C4 /* MeChama-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				5FB9A15A2684F13500351369 /* Application */,
 				8A112E3A26820CDE00F868C4 /* AppDelegate.swift */,
 				8A112E4326820CE100F868C4 /* Assets.xcassets */,
 				8A112E6A26820F4D00F868C4 /* Modules */,
@@ -439,8 +464,11 @@
 			files = (
 				8A112E3B26820CDE00F868C4 /* AppDelegate.swift in Sources */,
 				8A6018DB2683A16C00E3D2C3 /* RestaurantCardModel.swift in Sources */,
+				5FB9A15F2684F1DF00351369 /* MeChamaApiClient.swift in Sources */,
+				5FB9A1612684F21800351369 /* ApiClient.swift in Sources */,
 				8A6018D4268223A100E3D2C3 /* HomeViewModel.swift in Sources */,
 				8A6018D92683A12A00E3D2C3 /* RestaurantCardService.swift in Sources */,
+				5FB9A15D2684F15A00351369 /* MeChamaApiRouter.swift in Sources */,
 				8A112E6E26820FAE00F868C4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
