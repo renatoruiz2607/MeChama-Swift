@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10B77A30FAF92DB386A9B638 /* Pods_MeChama_Swift_MeChama_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46017F7F7E63E198515FC708 /* Pods_MeChama_Swift_MeChama_SwiftUITests.framework */; };
+		8A112E3B26820CDE00F868C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A112E3A26820CDE00F868C4 /* AppDelegate.swift */; };
+		8A112E4426820CE100F868C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A112E4326820CE100F868C4 /* Assets.xcassets */; };
+		8A112E4726820CE100F868C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A112E4526820CE100F868C4 /* LaunchScreen.storyboard */; };
+		8A112E5226820CE100F868C4 /* MeChama_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A112E5126820CE100F868C4 /* MeChama_SwiftTests.swift */; };
+		8A112E5D26820CE200F868C4 /* MeChama_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A112E5C26820CE200F868C4 /* MeChama_SwiftUITests.swift */; };
+		8A112E6E26820FAE00F868C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A112E6C26820FAE00F868C4 /* HomeViewController.swift */; };
+		8A112E6F26820FAE00F868C4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A112E6D26820FAE00F868C4 /* HomeViewController.xib */; };
+		8A6018D4268223A100E3D2C3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6018D3268223A100E3D2C3 /* HomeViewModel.swift */; };
+		8A6018D92683A12A00E3D2C3 /* RestaurantCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6018D82683A12A00E3D2C3 /* RestaurantCardService.swift */; };
+		8A6018DB2683A16C00E3D2C3 /* RestaurantCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6018DA2683A16C00E3D2C3 /* RestaurantCardModel.swift */; };
+		D057839F9879FB411A6F0A53 /* Pods_MeChama_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36164E53D547E4E2FF02F2EA /* Pods_MeChama_SwiftTests.framework */; };
+		E79B4A1E9F8B40C11EE5D97C /* Pods_MeChama_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35A9B50EBAD0568512257A2 /* Pods_MeChama_Swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A112E4E26820CE100F868C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A112E2F26820CDE00F868C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A112E3626820CDE00F868C4;
+			remoteInfo = "MeChama-Swift";
+		};
+		8A112E5926820CE200F868C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A112E2F26820CDE00F868C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A112E3626820CDE00F868C4;
+			remoteInfo = "MeChama-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36164E53D547E4E2FF02F2EA /* Pods_MeChama_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeChama_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46017F7F7E63E198515FC708 /* Pods_MeChama_Swift_MeChama_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeChama_Swift_MeChama_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B512317F1C6C784018F44C1 /* Pods-MeChama-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChama-Swift.debug.xcconfig"; path = "Target Support Files/Pods-MeChama-Swift/Pods-MeChama-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		6ED77D14FFD06566A16659C7 /* Pods-MeChama-Swift-MeChama-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChama-Swift-MeChama-SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-MeChama-Swift-MeChama-SwiftUITests/Pods-MeChama-Swift-MeChama-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72CDDF1C5E0E020D43623A0F /* Pods-MeChama-Swift-MeChama-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChama-Swift-MeChama-SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeChama-Swift-MeChama-SwiftUITests/Pods-MeChama-Swift-MeChama-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8101B5D4B95A2FC7A5E82826 /* Pods-MeChama-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChama-SwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MeChama-SwiftTests/Pods-MeChama-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A112E3726820CDE00F868C4 /* MeChama-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeChama-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A112E3A26820CDE00F868C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A112E4326820CE100F868C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A112E4626820CE100F868C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A112E4826820CE100F868C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A112E4D26820CE100F868C4 /* MeChama-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MeChama-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A112E5126820CE100F868C4 /* MeChama_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeChama_SwiftTests.swift; sourceTree = "<group>"; };
+		8A112E5326820CE100F868C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A112E5826820CE200F868C4 /* MeChama-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MeChama-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A112E5C26820CE200F868C4 /* MeChama_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeChama_SwiftUITests.swift; sourceTree = "<group>"; };
+		8A112E5E26820CE200F868C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A112E6C26820FAE00F868C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8A112E6D26820FAE00F868C4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8A6018D3268223A100E3D2C3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8A6018D82683A12A00E3D2C3 /* RestaurantCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCardService.swift; sourceTree = "<group>"; };
+		8A6018DA2683A16C00E3D2C3 /* RestaurantCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCardModel.swift; sourceTree = "<group>"; };
+		8CF9D41607A87770F69A2723 /* Pods-MeChama-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChama-Swift.release.xcconfig"; path = "Target Support Files/Pods-MeChama-Swift/Pods-MeChama-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		A35A9B50EBAD0568512257A2 /* Pods_MeChama_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeChama_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1196BEED91DF9D7654D2144 /* Pods-MeChama-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChama-SwiftTests.release.xcconfig"; path = "Target Support Files/Pods-MeChama-SwiftTests/Pods-MeChama-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A112E3426820CDE00F868C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79B4A1E9F8B40C11EE5D97C /* Pods_MeChama_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A112E4A26820CE100F868C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D057839F9879FB411A6F0A53 /* Pods_MeChama_SwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A112E5526820CE200F868C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B77A30FAF92DB386A9B638 /* Pods_MeChama_Swift_MeChama_SwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DD75EEDF54DF3F4E9608278 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B512317F1C6C784018F44C1 /* Pods-MeChama-Swift.debug.xcconfig */,
+				8CF9D41607A87770F69A2723 /* Pods-MeChama-Swift.release.xcconfig */,
+				72CDDF1C5E0E020D43623A0F /* Pods-MeChama-Swift-MeChama-SwiftUITests.debug.xcconfig */,
+				6ED77D14FFD06566A16659C7 /* Pods-MeChama-Swift-MeChama-SwiftUITests.release.xcconfig */,
+				8101B5D4B95A2FC7A5E82826 /* Pods-MeChama-SwiftTests.debug.xcconfig */,
+				E1196BEED91DF9D7654D2144 /* Pods-MeChama-SwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A112E2E26820CDE00F868C4 = {
+			isa = PBXGroup;
+			children = (
+				8A112E3926820CDE00F868C4 /* MeChama-Swift */,
+				8A112E5026820CE100F868C4 /* MeChama-SwiftTests */,
+				8A112E5B26820CE200F868C4 /* MeChama-SwiftUITests */,
+				8A112E3826820CDE00F868C4 /* Products */,
+				4DD75EEDF54DF3F4E9608278 /* Pods */,
+				8E2DE4308BE89AFBB425B66B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A112E3826820CDE00F868C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A112E3726820CDE00F868C4 /* MeChama-Swift.app */,
+				8A112E4D26820CE100F868C4 /* MeChama-SwiftTests.xctest */,
+				8A112E5826820CE200F868C4 /* MeChama-SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A112E3926820CDE00F868C4 /* MeChama-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8A112E3A26820CDE00F868C4 /* AppDelegate.swift */,
+				8A112E4326820CE100F868C4 /* Assets.xcassets */,
+				8A112E6A26820F4D00F868C4 /* Modules */,
+				8A112E4526820CE100F868C4 /* LaunchScreen.storyboard */,
+				8A112E4826820CE100F868C4 /* Info.plist */,
+			);
+			path = "MeChama-Swift";
+			sourceTree = "<group>";
+		};
+		8A112E5026820CE100F868C4 /* MeChama-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A112E5126820CE100F868C4 /* MeChama_SwiftTests.swift */,
+				8A112E5326820CE100F868C4 /* Info.plist */,
+			);
+			path = "MeChama-SwiftTests";
+			sourceTree = "<group>";
+		};
+		8A112E5B26820CE200F868C4 /* MeChama-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A112E5C26820CE200F868C4 /* MeChama_SwiftUITests.swift */,
+				8A112E5E26820CE200F868C4 /* Info.plist */,
+			);
+			path = "MeChama-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		8A112E6A26820F4D00F868C4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8A112E6B26820F6100F868C4 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8A112E6B26820F6100F868C4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8A6018D726839FEC00E3D2C3 /* Models */,
+				8A112E6C26820FAE00F868C4 /* HomeViewController.swift */,
+				8A112E6D26820FAE00F868C4 /* HomeViewController.xib */,
+				8A6018D3268223A100E3D2C3 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8A6018D726839FEC00E3D2C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A6018D82683A12A00E3D2C3 /* RestaurantCardService.swift */,
+				8A6018DA2683A16C00E3D2C3 /* RestaurantCardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E2DE4308BE89AFBB425B66B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A35A9B50EBAD0568512257A2 /* Pods_MeChama_Swift.framework */,
+				46017F7F7E63E198515FC708 /* Pods_MeChama_Swift_MeChama_SwiftUITests.framework */,
+				36164E53D547E4E2FF02F2EA /* Pods_MeChama_SwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A112E3626820CDE00F868C4 /* MeChama-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A112E6126820CE200F868C4 /* Build configuration list for PBXNativeTarget "MeChama-Swift" */;
+			buildPhases = (
+				C70B6B01CD05EA5660D12E5E /* [CP] Check Pods Manifest.lock */,
+				8A112E3326820CDE00F868C4 /* Sources */,
+				8A112E3426820CDE00F868C4 /* Frameworks */,
+				8A112E3526820CDE00F868C4 /* Resources */,
+				24FBF41E2D2533D38BBB42F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MeChama-Swift";
+			productName = "MeChama-Swift";
+			productReference = 8A112E3726820CDE00F868C4 /* MeChama-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A112E4C26820CE100F868C4 /* MeChama-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A112E6426820CE200F868C4 /* Build configuration list for PBXNativeTarget "MeChama-SwiftTests" */;
+			buildPhases = (
+				FAB0AC5CF76C5AD03B494DDB /* [CP] Check Pods Manifest.lock */,
+				8A112E4926820CE100F868C4 /* Sources */,
+				8A112E4A26820CE100F868C4 /* Frameworks */,
+				8A112E4B26820CE100F868C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A112E4F26820CE100F868C4 /* PBXTargetDependency */,
+			);
+			name = "MeChama-SwiftTests";
+			productName = "MeChama-SwiftTests";
+			productReference = 8A112E4D26820CE100F868C4 /* MeChama-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A112E5726820CE200F868C4 /* MeChama-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A112E6726820CE200F868C4 /* Build configuration list for PBXNativeTarget "MeChama-SwiftUITests" */;
+			buildPhases = (
+				7BCACEE09C0A7A08F1EC28A6 /* [CP] Check Pods Manifest.lock */,
+				8A112E5426820CE200F868C4 /* Sources */,
+				8A112E5526820CE200F868C4 /* Frameworks */,
+				8A112E5626820CE200F868C4 /* Resources */,
+				C0D0CE1593192ACB6D1368DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A112E5A26820CE200F868C4 /* PBXTargetDependency */,
+			);
+			name = "MeChama-SwiftUITests";
+			productName = "MeChama-SwiftUITests";
+			productReference = 8A112E5826820CE200F868C4 /* MeChama-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A112E2F26820CDE00F868C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Renato Ruiz";
+				TargetAttributes = {
+					8A112E3626820CDE00F868C4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8A112E4C26820CE100F868C4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8A112E3626820CDE00F868C4;
+					};
+					8A112E5726820CE200F868C4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8A112E3626820CDE00F868C4;
+					};
+				};
+			};
+			buildConfigurationList = 8A112E3226820CDE00F868C4 /* Build configuration list for PBXProject "MeChama-Swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A112E2E26820CDE00F868C4;
+			productRefGroup = 8A112E3826820CDE00F868C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A112E3626820CDE00F868C4 /* MeChama-Swift */,
+				8A112E4C26820CE100F868C4 /* MeChama-SwiftTests */,
+				8A112E5726820CE200F868C4 /* MeChama-SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A112E3526820CDE00F868C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A112E4726820CE100F868C4 /* LaunchScreen.storyboard in Resources */,
+				8A112E4426820CE100F868C4 /* Assets.xcassets in Resources */,
+				8A112E6F26820FAE00F868C4 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A112E4B26820CE100F868C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A112E5626820CE200F868C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24FBF41E2D2533D38BBB42F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeChama-Swift/Pods-MeChama-Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeChama-Swift/Pods-MeChama-Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeChama-Swift/Pods-MeChama-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BCACEE09C0A7A08F1EC28A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeChama-Swift-MeChama-SwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D0CE1593192ACB6D1368DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeChama-Swift-MeChama-SwiftUITests/Pods-MeChama-Swift-MeChama-SwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeChama-Swift-MeChama-SwiftUITests/Pods-MeChama-Swift-MeChama-SwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeChama-Swift-MeChama-SwiftUITests/Pods-MeChama-Swift-MeChama-SwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C70B6B01CD05EA5660D12E5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeChama-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAB0AC5CF76C5AD03B494DDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeChama-SwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A112E3326820CDE00F868C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A112E3B26820CDE00F868C4 /* AppDelegate.swift in Sources */,
+				8A6018DB2683A16C00E3D2C3 /* RestaurantCardModel.swift in Sources */,
+				8A6018D4268223A100E3D2C3 /* HomeViewModel.swift in Sources */,
+				8A6018D92683A12A00E3D2C3 /* RestaurantCardService.swift in Sources */,
+				8A112E6E26820FAE00F868C4 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A112E4926820CE100F868C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A112E5226820CE100F868C4 /* MeChama_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A112E5426820CE200F868C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A112E5D26820CE200F868C4 /* MeChama_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A112E4F26820CE100F868C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A112E3626820CDE00F868C4 /* MeChama-Swift */;
+			targetProxy = 8A112E4E26820CE100F868C4 /* PBXContainerItemProxy */;
+		};
+		8A112E5A26820CE200F868C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A112E3626820CDE00F868C4 /* MeChama-Swift */;
+			targetProxy = 8A112E5926820CE200F868C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A112E4526820CE100F868C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A112E4626820CE100F868C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A112E5F26820CE200F868C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A112E6026820CE200F868C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A112E6226820CE200F868C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B512317F1C6C784018F44C1 /* Pods-MeChama-Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MeChama-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study.MeChama-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A112E6326820CE200F868C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF9D41607A87770F69A2723 /* Pods-MeChama-Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MeChama-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study.MeChama-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A112E6526820CE200F868C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8101B5D4B95A2FC7A5E82826 /* Pods-MeChama-SwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MeChama-SwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study.MeChama-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeChama-Swift.app/MeChama-Swift";
+			};
+			name = Debug;
+		};
+		8A112E6626820CE200F868C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1196BEED91DF9D7654D2144 /* Pods-MeChama-SwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MeChama-SwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study.MeChama-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeChama-Swift.app/MeChama-Swift";
+			};
+			name = Release;
+		};
+		8A112E6826820CE200F868C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72CDDF1C5E0E020D43623A0F /* Pods-MeChama-Swift-MeChama-SwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MeChama-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study.MeChama-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MeChama-Swift";
+			};
+			name = Debug;
+		};
+		8A112E6926820CE200F868C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED77D14FFD06566A16659C7 /* Pods-MeChama-Swift-MeChama-SwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MeChama-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study.MeChama-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MeChama-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A112E3226820CDE00F868C4 /* Build configuration list for PBXProject "MeChama-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A112E5F26820CE200F868C4 /* Debug */,
+				8A112E6026820CE200F868C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A112E6126820CE200F868C4 /* Build configuration list for PBXNativeTarget "MeChama-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A112E6226820CE200F868C4 /* Debug */,
+				8A112E6326820CE200F868C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A112E6426820CE200F868C4 /* Build configuration list for PBXNativeTarget "MeChama-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A112E6526820CE200F868C4 /* Debug */,
+				8A112E6626820CE200F868C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A112E6726820CE200F868C4 /* Build configuration list for PBXNativeTarget "MeChama-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A112E6826820CE200F868C4 /* Debug */,
+				8A112E6926820CE200F868C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A112E2F26820CDE00F868C4 /* Project object */;
+}
